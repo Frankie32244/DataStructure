@@ -16,6 +16,8 @@ int getTop(stack S);                        // 取栈顶
 
 void push(stack S,int e);                   // 入栈
 
-void pop(stack S);                         // 出栈
+void pop(stack S);                         // 出栈  huang 
+
+void menu()
 
 #endif
