@@ -3,12 +3,12 @@
 #include "seqlist.h"
 #include "sqfoo.h"
 
-#define listSize 100
+#define listSize 100          // the seqlist Maxsize is 100
 
 
 int main()
 {
-	//初始化seqlist
+	//Init seqlist
 	sequenceList* L = (sequenceList*)malloc(sizeof(sequenceList));
     L->elem = (int *)malloc(sizeof(int) * listSize);
     L->length = 0;
@@ -18,9 +18,9 @@ int main()
 	while (1)
 	{
 		menu();
-		printf("请输入菜单序号：\n");
+		printf("Please enter the choice(1-7):\n");
 		scanf("%d", &choice);
-		if (8 == choice) break;
+		if (9 == choice) break;
 		switch (choice)
 		{
 		case 1:Create(L); break;
@@ -30,7 +30,8 @@ int main()
 		case 5:Locate(L); break;
 		case 6:Print(L); break;
 		case 7:Reverse(L); break;
-		default:printf("输入错误！！！\n");
+		case 8:Clear(L);break;
+		default:printf("Wrong choice !!! Please enter the correct choice!!\n");
 		}
 	}
 	

@@ -7,12 +7,11 @@
 #define listSize 100
 
 // typedef struct {
-//     int length;                                       // 当前长度
-//     int listSize;                                     // 存储容量
-//     int * elem;                                       // 存储空间基址
+//     int length;                                       // length of sequence list
+//     int * elem;                                       // array in the sequence list
 // }sequenceList;
 
-
+// check the index is out of bound or not 
 bool checkIndex(int index,sequenceList* L){
 
     if(index < 1 || index > L->length)
@@ -22,10 +21,7 @@ bool checkIndex(int index,sequenceList* L){
 
 }
 void createList(sequenceList* L,int* nums,int n){
-    if(n < 1 || n >listSize){
-        printf("Incorrect length!!!\n");
-        return;
-    }
+    
 
     for(int i = 0; i < n ;i++){
         L->elem[i] = nums[i];
@@ -38,7 +34,8 @@ void insertList(sequenceList* L,int index,int e){
     int n = L->length;
 
     if(index < 1 || index > L->length + 1){
-        printf("Incorrect index.\n");
+        printf("Incorrect index!!!\n");
+        return ;
     }
 
     if(n == listSize){    
@@ -108,7 +105,7 @@ void printList(sequenceList*L){
     int n = L->length;
 
     if(n == 0){
-        printf("Error! The seqlist is empty!\n");
+        printf("Error! The seqlist is empty! Can't be displayed!!\n");
         return;
     }
 
@@ -123,7 +120,7 @@ void printList(sequenceList*L){
 void reverseList(sequenceList* L){
     int n = L->length / 2;
 
-    if(n == 0){
+    if(L->length == 0){
         printf("Error! The seqlist is empty! Can't be reversed!!!\n");
         return;
     }
@@ -134,4 +131,8 @@ void reverseList(sequenceList* L){
         L->elem[L->length - i - 1] = temp;
     }
 
+}
+
+void clearList(sequenceList* L){
+    L->length  = 0;
 }

@@ -15,6 +15,8 @@ void Print(sequenceList* L);
 
 void Reverse(sequenceList* L);
 
+void Clear(sequenceList* L);
+
 void menu();
 
 

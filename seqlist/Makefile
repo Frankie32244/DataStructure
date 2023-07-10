@@ -6,3 +6,5 @@ seqlist.o:seqlist.h seqlist.c
 		gcc -c seqlist.c
 sqfoo.o:sqfoo.h sqfoo.c
 		gcc -c sqfoo.c
+clean:
+	rm -f seqlist.o sqfoo.o main.o
