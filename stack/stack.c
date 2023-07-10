@@ -8,41 +8,37 @@
 //     int stacksize;                                     
 // }stack;
 
-int empty(stack S){
-    return S.top == S.base;
+bool isEmpty(stack * S_ptr){
+    return S_ptr->top == S_ptr->base;
 }
 
-void initStack(stack S){
-    S.base = (int*)malloc(sizeof(int) * MaxSize);
+void initStack(stack * S_ptr){
+    S_ptr->base = (int*)malloc(sizeof(int) * MaxSize);
 
-    S.top = S.base;
+    S_ptr->top = S_ptr->base;
 
-    S.stacksize = MaxSize;
+    S_ptr->stacksize = MaxSize;
 
 }
 
-int getTop(stack S){
-    if( empty(S) == 1){
-        printf("The stack is empty!!\n");
-        return -1;
-    }
-    return *S.top;
+int getTop(stack * S_ptr){
+   
+    return *(S_ptr->top - 1);
 }
 
-void push(stack S,int e){
-    int size = S.top - S.base;
-    if(size == MaxSize){
-        printf("The stack is out of space! Can't be pushed any element!!\n");
-        return;
-    }
-    *S.top = e;
-    S.top++; 
+void push(stack * S_ptr,int e){
+
+    *S_ptr->top = e;
+    S_ptr->top++; 
+
 }
 
-void pop(stack S){
-    if( empty(S) == 1){
-        printf("The stack is empty!! Can't pop any element!!\n");
-    }
-    S.top--;
+void pop(stack * S_ptr){
+    
+    S_ptr->top--;
+}
+
+void clear(stack * S_ptr){
+    S_ptr->top = S_ptr->base;
 }
 
