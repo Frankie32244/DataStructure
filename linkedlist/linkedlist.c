@@ -8,7 +8,6 @@
 //     int len;
 // }ListNode;
 
-
 void createList(ListNode* L,int *nums,int n){
     ListNode* head = L;
     for(int i = 0 ; i < n; i++){
@@ -18,6 +17,7 @@ void createList(ListNode* L,int *nums,int n){
         head->next = new_node;
         head = new_node;
     }
+    
     L->len = n;
 }
 
