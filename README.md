@@ -1,6 +1,6 @@
 ## Data structure implementation developed by C language
 
-an example:
+#### an example for sequence list:
 ```linux
 # clone the repository to the local folder
 
