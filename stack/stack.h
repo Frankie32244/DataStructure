@@ -6,18 +6,18 @@
 typedef struct {
     int * base;                                     
     int * top;                               
-    int stacksize;                          // 当前已分配的存储空间    
+    int stacksize;                           
 }stack;
 
-bool isEmpty(stack* S_pointer);                         // 判断是否为空,1不空，0为空
+bool isEmpty(stack* S_pointer);                        
 
-void initStack(stack* S_pointer);                    // 初始化栈
+void initStack(stack* S_pointer);                    
 
-int getTop(stack* S_pointer);                        // 取栈顶
+int getTop(stack* S_pointer);                        
 
-void push(stack* S_pointer,int e);                   // 入栈
+void push(stack* S_pointer,int e);                   
 
-void pop(stack* S_pointer);                         // 出栈  huang 
+void pop(stack* S_pointer);                         
 
 void clear(stack* S_pointer);
 
