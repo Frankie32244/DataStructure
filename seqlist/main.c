@@ -10,8 +10,8 @@ int main()
 {
 	//Init seqlist
 	sequenceList* L = (sequenceList*)malloc(sizeof(sequenceList));
-    L->elem = (int *)malloc(sizeof(int) * listSize);
-    L->length = 0;
+  	L->elem = (int *)malloc(sizeof(int) * listSize);
+        L->length = 0;
 
 	int choice;
 
