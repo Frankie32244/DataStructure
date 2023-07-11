@@ -2,19 +2,26 @@
 #include<stdlib.h>
 #include"binarytree.h"
 
-
-void createBiTree(TreeNode* T,int* nums,int size,int index){
-    if(index >= size){
-        T = NULL;
+// T means double ptr
+void createBiTree(TreeNode** T,int* nums,int nums_len,int index){
+    if(index >= nums_len){
+        *T = NULL;
         return;
     }
-    T = (TreeNode*)malloc(sizeof(TreeNode));
-
-    if(nums[index] == -1){
-        T = NULL;
+    else if(nums[index] == -1){
+        *T = NULL;
+        return;
     }
-    createBiTree(T->left,nums,size,2 * index);
-    createBiTree(T->right,nums,size,2 * index + 1);
+    else if(index == 0){
+        (*T)->data = nums[index];
+    }
+    else{
+        *T = (TreeNode*)malloc(sizeof(TreeNode));
+        (*T)->data = nums[index];
+    }
+    
+    createBiTree(&(*T)->left,nums,nums_len,2 * index + 1);
+    createBiTree(&(*T)->right,nums,nums_len,2 * index + 2);
 
     return;
 }
@@ -62,7 +69,7 @@ int nodeCount(TreeNode* T){
 }
 
 int leafNodeCount(TreeNode* T){
-    if(T != NULL)
+    if(T == NULL)
         return 0;
     
     if(T->left == NULL && T->right ==NULL)

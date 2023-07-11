@@ -6,7 +6,7 @@ typedef struct {
     struct Node* left,*right;
 }TreeNode;
 
-void createBiTree(TreeNode* T,int* nums,int size,int index);
+void createBiTree(TreeNode** T,int* nums,int nums_len,int index);
 
 int depth(TreeNode* T);
 
