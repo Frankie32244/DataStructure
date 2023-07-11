@@ -1,6 +1,22 @@
-## Data structure -- seqence list demo 
+## Data structure implementation developed by C language
 
-本来想着实现一个命令行工具去实现这个demo.要学makefile,加上时间紧急，就没做。以后会makefile之后可以搞。other_DS文件夹是其他数据结构的function。搞定一个线性表，其他都差不多。
+an example:
+```linux
+# clone the repository to the local folder 
+$ git clone https://github.com/Frankie32244/DataStructure
+
+$ cd DataStructure/seqlist
+
+# compile 
+$ make
+# gcc -c main.c 
+# gcc -c seqlist.c
+# gcc -c sqfoo.c
+# gcc main.o seqlist.o sqfoo.o -o seqlist_demo
+
+$ make clean
+$ ./seqlist_demo
+```
 
 
 
