@@ -35,6 +35,10 @@ clean:
 	rm -f seqlist.o sqfoo.o main.o
 ```
 
+
+#### undo list
+- [x] handle hashtable collison
+- [x] generate all the files to a lib 
 #### Contact 
 
 visit for the issues or contact with (liw964401@Outlook.com)
