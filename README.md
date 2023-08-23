@@ -1,6 +1,6 @@
 ## Data structure implementation developed by C language
 
-#### an example for sequence list:
+#### An example for sequence list:
 ```linux
 # clone the repository to the local folder
 
@@ -36,7 +36,7 @@ clean:
 ```
 
 
-#### undo list
+#### Undo list
 - [ ] handle hashtable collison
 - [ ] generate all the files to a lib 
 #### Contact 
