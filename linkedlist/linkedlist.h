@@ -7,21 +7,20 @@ typedef struct {
     int len;
 }ListNode;
 
-// int size(ListNode* L);                            //表长
 
-void createList(ListNode* L,int *nums,int n);               // 创建
+void createList(ListNode* L,int *nums,int n);               // create a linkedlist
 
-void insertList(ListNode* L,int index,int e);     // 增
+void insertList(ListNode* L,int index,int e);     // insert a value to the linked list
 
-void deleteList(ListNode* L,int index);           // 删
+void deleteList(ListNode* L,int index);           // delete some element from the linked list
 
-void modifyList(ListNode* L,int index,int e);     //  改
+void modifyList(ListNode* L,int index,int e);     //  modify some element from the linked list
 
-int locateList(ListNode* L,int index);          //  查
+int locateList(ListNode* L,int index);          //  locate the liked list with an index 
 
-void printList(ListNode* L);                      //  输出链表
+void printList(ListNode* L);                      //  print each element in the linked list orderly
 
-void reverseList(ListNode* L);                  // 反转链表
+void reverseList(ListNode* L);                  // reverse the linked list 
 
 void clearList(ListNode* L);
 

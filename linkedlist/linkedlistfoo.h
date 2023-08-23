@@ -17,8 +17,5 @@ void Reverse(ListNode* L);
 
 void Clear(ListNode* L);
 
-// void menu(); huang
-
-
 #endif
 

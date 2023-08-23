@@ -29,6 +29,7 @@ void insertList(ListNode* L,int index,int e){
         head = head->next;
         cnt++;
     }
+
     // insert a linked list node called temp
     ListNode* temp = (ListNode*)malloc(sizeof(ListNode*));
     temp->val = e;
@@ -47,7 +48,7 @@ void deleteList(ListNode* L,int index){
         cnt++;
     }
     ListNode* temp = head->next;
-    head->next = temp->next;  // same meaning as head->next = head->next->next
+    head->next = temp->next;  // same as head->next = head->next->next
     free(temp);
 
     L->len--;

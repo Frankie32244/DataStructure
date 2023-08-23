@@ -49,12 +49,14 @@ void Delete(ListNode *L)
 	int index;
 	printf("Please enter the position to delete (starting from 1):\n");
 	scanf("%d", &index);
+
     // check the linked list is empty or not 
     if(L->len == 0){
         printf("The linked list is empty! Can't be removed any element!\n");
         return;
     }
-    // check the index of the delete node is legal 
+
+    // check the index of is legal or not
     if(index < 1 ){
         printf("Error index!\n");
         return;
