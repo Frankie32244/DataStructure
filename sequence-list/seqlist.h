@@ -21,6 +21,6 @@ void printList(sequenceList*L);                      //  display the sequence li
 
 void reverseList(sequenceList* L);                  // reverse the sequence list
 
-void clearList(sequenceList* L);
+void clearList(sequenceList* L);                    // clear the entire list
 
 #endif

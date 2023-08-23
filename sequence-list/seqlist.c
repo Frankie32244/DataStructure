@@ -19,6 +19,7 @@ bool checkIndex(int index,sequenceList* L){
     return true;
 
 }
+
 void createList(sequenceList* L,int* nums,int n){
     
 
