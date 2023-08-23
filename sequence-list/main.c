@@ -11,8 +11,9 @@ int main()
 	//Init seqlist
 	sequenceList* L = (sequenceList*)malloc(sizeof(sequenceList));
   	L->elem = (int *)malloc(sizeof(int) * listSize);
-        L->length = 0;
-
+    L->length = 0;
+	
+	//choice from 1~7
 	int choice;
 
 	while (1)

@@ -1,5 +1,6 @@
 #ifndef SQFOO_H
 #define SQFOO_H
+#include "seqlist.h"
 
 void Create(sequenceList* L);
 

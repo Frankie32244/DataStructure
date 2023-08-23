@@ -1,12 +1,12 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include "seqlist.h"
+#define listSize 100          // the seqlist Maxsize is 100
 
-#define listSize 100
+// create a sequence list
 void Create(sequenceList* L)
 {
 	int n;
-	
 	printf("Please enter the length of the seqlist you wanna create (length > 1):");
 	scanf("%d", &n);
 
@@ -28,6 +28,7 @@ void Create(sequenceList* L)
 	printList(L);
 }
 
+// insert a value to sequence list
 void Insert(sequenceList *L)
 {
 	int index; int e;
@@ -39,6 +40,7 @@ void Insert(sequenceList *L)
 	printList(L);
 }
 
+// delete a value from sequence list
 void Delete(sequenceList *L)
 {
 	int index;
@@ -48,6 +50,8 @@ void Delete(sequenceList *L)
 
 	printList(L);
 }
+
+// modify a value from sequence list 
 void Modify(sequenceList* L){
 	int index , e;
 	printf("Please enter the position to be modified (starting from 1) and the modified value:\n");
@@ -57,6 +61,7 @@ void Modify(sequenceList* L){
 	printList(L);
 }
 
+// locate with an index in sequence list
 void Locate(sequenceList* L)
 {
 	int index;
@@ -69,10 +74,12 @@ void Locate(sequenceList* L)
 		printf("\n");
 }
 
+// print each element in sequence list in order 
 void Print(sequenceList* L){
 	printList(L);  
 }
 
+// reverse the sequence list
 void Reverse(sequenceList* L){
 
 	reverseList(L);
@@ -80,10 +87,12 @@ void Reverse(sequenceList* L){
 	printList(L);
 }
 
+// clear the sequence list 
 void Clear(sequenceList* L){
 	clearList(L);
 	printf("Clear the sequence list successfully !\n");
 }
+
 
 void menu()
 {

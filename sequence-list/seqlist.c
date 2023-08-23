@@ -3,8 +3,7 @@
 #include<stdbool.h>
 
 #include "seqlist.h"
-
-#define listSize 100
+#define listSize 100          // the seqlist Maxsize is 100
 
 // typedef struct {
 //     int length;                                       // length of sequence list
