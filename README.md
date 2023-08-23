@@ -37,8 +37,8 @@ clean:
 
 
 #### undo list
-- [] handle hashtable collison
-- [] generate all the files to a lib 
+- [ ] handle hashtable collison
+- [ ] generate all the files to a lib 
 #### Contact 
 
 visit for the issues or contact with (liw964401@Outlook.com)
