@@ -8,9 +8,11 @@
 //     int stacksize;                                     
 // }stack;
 
+
 bool isEmpty(stack * S_ptr){
     return S_ptr->top == S_ptr->base;
 }
+
 
 void initStack(stack * S_ptr){
     S_ptr->base = (int*)malloc(sizeof(int) * MaxSize);
@@ -21,10 +23,12 @@ void initStack(stack * S_ptr){
 
 }
 
+
 int getTop(stack * S_ptr){
    
     return *(S_ptr->top - 1);
 }
+
 
 void push(stack * S_ptr,int e){
 
@@ -33,10 +37,12 @@ void push(stack * S_ptr,int e){
 
 }
 
+
 void pop(stack * S_ptr){
     
     S_ptr->top--;
 }
+
 
 void clear(stack * S_ptr){
     S_ptr->top = S_ptr->base;
