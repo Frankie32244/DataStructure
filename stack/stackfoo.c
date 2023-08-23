@@ -17,6 +17,7 @@ void GetStackSize(stack * S_ptr){
 
 }
 
+
 void Push(stack * S_ptr){
     int size = S_ptr->top - S_ptr->base, e;
 
@@ -33,6 +34,7 @@ void Push(stack * S_ptr){
     }
 }
 
+
 void Pop(stack * S_ptr){
     if( isEmpty(S_ptr) == true){
         printf("The stack is empty!! Can't pop any element!!\n");
@@ -43,6 +45,7 @@ void Pop(stack * S_ptr){
     printf("Poping successfully!\n");
 } 
 
+
 void GetTop(stack * S_ptr){
     if( isEmpty(S_ptr) == 1){
         printf("The stack is empty!!\n");
@@ -51,6 +54,7 @@ void GetTop(stack * S_ptr){
     int e = getTop(S_ptr);
     printf("The top value of the stack is %d.\n",e);
 } 
+
 
 void Clear(stack * S_ptr){
     clear(S_ptr);
